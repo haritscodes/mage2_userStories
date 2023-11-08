@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <type name="Magento\Catalog\Model\Product" setup_version="0.0.1" >
-        <plugin name="Harit_HaritModule_Plugin_AddOnSaleToProducts" type="Harit\HaritModule\Plugin\AddOnSaleToProducts"/>
+        <plugin name="Harit_HaritModule_Plugin_AddOnSaleToProductsPlugin" type="Harit\HaritModule\Plugin\AddOnSaleToProductsPlugin"/>
+        <plugin
+        name="Harit_HaritModule_Plugin_CopyrightPlugin"
+        type="Harit\HaritModule\Plugin\CopyrightPlugin.php"
+        />
+        <plugin
+        name="Harit_HaritModule_Plugin_WelcomeMsgPlugin"
+        type="Harit\HaritModule\Plugin\WelcomeMsgPlugin.php"
+        />
     </type>
 </config>
