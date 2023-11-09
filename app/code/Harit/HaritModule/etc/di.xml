@@ -1,18 +1,27 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+<!-- activate a plugin append On Sale to all the products whose price is less then 60-->
     <type name="Magento\Catalog\Model\Product" >
         <plugin name="Harit_HaritModule_Plugin_AddOnSaleToProductsPlugin" type="Harit\HaritModule\Plugin\AddOnSaleToProductsPlugin"/>
     </type>
+    <!-- to activate a custom plugin to change the copyright text -->
     <type name="Magento\Theme\Block\Html\Footer">
         <plugin
         name="Harit_HaritModule_Plugin_CopyrightPlugin"
         type="Harit\HaritModule\Plugin\CopyrightPlugin"
         />
     </type>
+    
+    <!-- to activate a custom plugin to change the welcome message text -->
     <type name="Magento\Theme\Block\Html\Header">
         <plugin
         name="Harit_HaritModule_Plugin_WelcomeMsgPlugin"
         type="Harit\HaritModule\Plugin\WelcomeMsgPlugin"
         />
+    </type>
+
+    <!-- to activate a custom plugin to change the Breadcrumbs message text and add 'hummingbird' in front of breadcrumb -->
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin name="Harit_HaritModule_Plugin_BreadcrumbsPlugin" type="Harit\HaritModule\Plugin\BreadcrumbsPlugin" />
     </type>
 </config>
