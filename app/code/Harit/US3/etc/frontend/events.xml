@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+<!-- observer to watch for products and append log "HummingBird Product" in system.log  -->
     <event name="catalog_controller_product_view">
         <observer name="Observer" instance="Harit\US3\Observer\Observer" />
+    </event>
+<!-- Observer to watch for page load and log "hummingBird"-->
+    <event name="controller_front_send_response_before">
+        <observer name="Observer2" instance="Harit\US3\Observer\Observer2" />
     </event>
 </config>

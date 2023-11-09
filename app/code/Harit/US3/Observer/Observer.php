@@ -1,6 +1,6 @@
 <?php
 namespace Harit\US3\Observer;
-use  Magento\Framework\Event\ObserverInterface;
+use Magento\Framework\Event\ObserverInterface;
 use Psr\Log\LoggerInterface;
 
 class Observer implements ObserverInterface{
@@ -10,7 +10,7 @@ class Observer implements ObserverInterface{
     }
     public function execute(\Magento\Framework\Event\Observer $observer){
         $productName = $observer->getProduct()->getName();
-        $this->log->info($productName." HummingBird Product");
+        $this->log->info($productName . " HummingBird Product");
     }
 }
 ?>
