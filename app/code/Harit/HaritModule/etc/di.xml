@@ -8,8 +8,7 @@
     <type name="Magento\Theme\Block\Html\Footer">
         <plugin
         name="Harit_HaritModule_Plugin_CopyrightPlugin"
-        type="Harit\HaritModule\Plugin\CopyrightPlugin"
-        />
+        type="Harit\HaritModule\Plugin\CopyrightPlugin"/>
     </type>
     
     <!-- to activate a custom plugin to change the welcome message text -->

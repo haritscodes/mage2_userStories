@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <router id="custom_renderer">
+        <route id="userstory6" frontname="userstory6module1">
+            <module name="Harit_Us6" setup_version="0.0.1"/>
+        </route>
+    </router>
+</config>
